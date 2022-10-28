@@ -103,15 +103,15 @@
                             <div class="col1">
                                 <div class="box1">
                                     <input type="number" style="width: 2.3em" name="attr_strength" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{Strength=**Check**}}">Strength</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{desc2=**Strength Check**}}">Strength</button>
                                 </div>
                                 <div class="box2">
                                     <input type="number" style="width: 2.3em" name="attr_agility" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{Agility=**Check**}}">Agility</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{desc2=**Agility Check**}}">Agility</button>
                                 </div>
                                 <div class="box3">
                                     <input type="number" style="width: 2.3em" name="attr_spirit" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{Spirit=**Check**}}">Spirit</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{desc2=**Spirit Check**}}">Spirit</button>
                                 </div>
                             </div>
                             <div class="col2">
@@ -131,15 +131,15 @@
                             <div class="col3">
                                 <div class="box4">
                                     <input type="number" style="width: 2.3em" name="attr_endurance" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{Endurance=**Check**}}">Endurance</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{desc2=**Endurance Check**}}">Endurance</button>
                                 </div>
                                 <div class="box5">
                                     <input type="number" style="width: 2.3em" name="attr_mind" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0+@{mind_dice}]] | [[d2+@{mind_dice}]]}}{{Mind=**Check**}}">Mind</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0+@{mind_dice}]] | [[d2+@{mind_dice}]]}}{{desc2=**Mind Check**}}">Mind</button>
                                 </div>
                                 <div class="box6">
                                     <input type="number" style="width: 2.3em" name="attr_charisma" class="att-value" min="1" max="30"/>
-                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}+d10]] | [[d0 + @{charisma_dice}]]}}{{Charisma=**Check**}}">Charisma</button>
+                                    <button class="main-roll-button ability-button" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}+d10]] | [[d0 + @{charisma_dice}]]}}{{desc2=**Charisma Check**}}">Charisma</button>
                                 </div>
                             </div>
                             <div class="col4">
@@ -163,7 +163,7 @@
                                     <span name="attr_strength_dice" class="dice-value3"></span> + 
                                     <span name="attr_endurance_dice" class="dice-value3"></span>
                                 </div>
-                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice} + @{endurance_dice} + @{resist-sb}]] | [[d0 + @{strength_dice} + @{endurance_dice} + @{resist-sb}]]}}{{Resistance=**Check**}}">Resistance</button>
+                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice} + @{endurance_dice} + @{resist-sb}]] | [[d0 + @{strength_dice} + @{endurance_dice} + @{resist-sb}]]}}{{desc2=**Resistance Check**}}">Resistance</button>
                                 <div class="save-bonus-box">
                                     <input type="checkbox" name="attr_resist-sb" value="d4[SB]" checked>
                                     <div class="derivedlabel">Save Bonus</div>
@@ -174,7 +174,7 @@
                                     <span name="attr_agility_dice" class="dice-value3"></span> + 
                                     <span name="attr_mind_dice" class="dice-value3"></span>
                                 </div>
-                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice} + @{mind_dice} + @{reflex-sb}]] | [[d0 + @{agility_dice} + @{mind_dice} + @{reflex-sb}]]}}{{Reflex=**Check**}}">Reflex</button>
+                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice} + @{mind_dice} + @{reflex-sb}]] | [[d0 + @{agility_dice} + @{mind_dice} + @{reflex-sb}]]}}{{desc2=**Reflex Check**}}">Reflex</button>
                                 <div class="save-bonus-box">
                                     <input type="checkbox" name="attr_reflex-sb" value="d4[SB]" checked>
                                     <div class="derivedlabel">Save Bonus</div>
@@ -185,7 +185,7 @@
                                     <span name="attr_spirit_dice" class="dice-value3"></span> + 
                                     <span name="attr_charisma_dice" class="dice-value3"></span>
                                 </div>
-                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice} + @{charisma_dice} + @{int-sb}]] | [[d0 + @{spirit_dice} + @{charisma_dice} + @{int-sb}]]}}{{Intuition=**Check**}}">Intuition</button>
+                                <button class="derived-roll-button save-button" type="roll" name="roll_save" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice} + @{charisma_dice} + @{int-sb}]] | [[d0 + @{spirit_dice} + @{charisma_dice} + @{int-sb}]]}}{{desc2=**Intuition Check**}}">Intuition</button>
                                 <div class="save-bonus-box">
                                     <input type="checkbox" name="attr_int-sb" value="d4[SB]" checked>
                                     <div class="derivedlabel">Save Bonus</div>
@@ -352,27 +352,27 @@
                     <div class="maindicebox">
                         <div class="maindice1">
                             <span name="attr_strength_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{Strength=**Check**}}">Strength</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{desc2=**Strength Check**}}">Strength</button>
                         </div>
                         <div class="maindice2">
                             <span name="attr_endurance_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{Endurance=**Check**}}">Endurance</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{desc2=**Endurance Check**}}">Endurance</button>
                         </div>
                         <div class="maindice3">
                             <span name="attr_agility_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{Agility=**Check**}}">Agility</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{desc2=**Agility Check**}}">Agility</button>
                         </div>
                         <div class="maindice4">
                             <span name="attr_mind_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{mind_dice}]] | [[d0 + @{mind_dice}]]}}{{Mind=**Check**}}">Mind</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{mind_dice}]] | [[d0 + @{mind_dice}]]}}{{desc2=**Mind Check**}}">Mind</button>
                         </div>
                         <div class="maindice5">
                             <span name="attr_spirit_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{Spirit=**Check**}}">Spirit</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{desc2=**Spirit Check**}}">Spirit</button>
                         </div>
                         <div class="maindice6">
                             <span name="attr_charisma_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}]] | [[d0 + @{charisma_dice}]]}}{{Charisma=**Check**}}">Charisma</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}]] | [[d0 + @{charisma_dice}]]}}{{desc2=**Charisma Check**}}">Charisma</button>
                         </div>
                     </div>
                     <p></p>
@@ -1406,27 +1406,27 @@
                     <div class="maindicebox2">
                         <div class="maindice1">
                             <span name="attr_strength_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{Strength=**Check**}}">Strength</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{strength_dice}]] | [[d0 + @{strength_dice}]]}}{{desc2=**Strength Check**}}">Strength</button>
                         </div>
                         <div class="maindice2">
                             <span name="attr_endurance_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{Endurance=**Check**}}">Endurance</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{endurance_dice}]] | [[d0 + @{endurance_dice}]]}}{{desc2=**Endurance Check**}}">Endurance</button>
                         </div>
                         <div class="maindice3">
                             <span name="attr_agility_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{Agility=**Check**}}">Agility</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{agility_dice}]] | [[d0 + @{agility_dice}]]}}{{desc2=**Agility Check**}}">Agility</button>
                         </div>
                         <div class="maindice4">
                             <span name="attr_mind_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{mind_dice}]] | [[d0 + @{mind_dice}]]}}{{Mind=**Check**}}">Mind</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{mind_dice}]] | [[d0 + @{mind_dice}]]}}{{desc2=**Mind Check**}}">Mind</button>
                         </div>
                         <div class="maindice5">
                             <span name="attr_spirit_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{Spirit=**Check**}}">Spirit</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{spirit_dice}]] | [[d0 + @{spirit_dice}]]}}{{desc2=**Spirit Check**}}">Spirit</button>
                         </div>
                         <div class="maindice6">
                             <span name="attr_charisma_dice" class="dice-value"></span>
-                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}]] | [[d0 + @{charisma_dice}]]}}{{Charisma=**Check**}}">Charisma</button>
+                            <button class="main-roll-button2 ability-button2" type="roll" name="roll_ability" value="@{whispertoggle}&{template:custom}{{title=@{character_name}}} {{Roll=[[d0 + @{charisma_dice}]] | [[d0 + @{charisma_dice}]]}}{{desc2=**Charisma Check**}}">Charisma</button>
                         </div>
                     </div>
                     <p></p>
@@ -2163,14 +2163,7 @@
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Psionic School:</label>
-                                                                        <select name="attr_school" class="psionicschool">
-                                                                            <option value="None" selected="selected">-</option>
-                                                                            <option value="Aeromancy">Aeromancy</option>
-                                                                            <option value="Geomancy">Geomancy</option>
-                                                                            <option value="Hydromancy">Hydromancy</option>
-                                                                            <option value="Necromancy">Necromancy</option>
-                                                                            <option value="Pyromancy">Pyromancy</option>
-                                                                        </select>
+                                                                        <input type="text" name="attr_school">
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Target:</label>
@@ -2425,14 +2418,7 @@
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Psionic School:</label>
-                                                                        <select name="attr_school" class="psionicschool">
-                                                                            <option value="None" selected="selected">-</option>
-                                                                            <option value="Aeromancy">Aeromancy</option>
-                                                                            <option value="Geomancy">Geomancy</option>
-                                                                            <option value="Hydromancy">Hydromancy</option>
-                                                                            <option value="Necromancy">Necromancy</option>
-                                                                            <option value="Pyromancy">Pyromancy</option>
-                                                                        </select>
+                                                                        <input type="text" name="attr_school">
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Target:</label>
@@ -2685,14 +2671,7 @@
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Psionic School:</label>
-                                                                        <select name="attr_school" class="psionicschool">
-                                                                            <option value="None" selected="selected">-</option>
-                                                                            <option value="Aeromancy">Aeromancy</option>
-                                                                            <option value="Geomancy">Geomancy</option>
-                                                                            <option value="Hydromancy">Hydromancy</option>
-                                                                            <option value="Necromancy">Necromancy</option>
-                                                                            <option value="Pyromancy">Pyromancy</option>
-                                                                        </select>
+                                                                        <input type="text" name="attr_school">
                                                                     </div>
                                                                     <div class="sheet-form-group">
                                                                         <label>Target:</label>
@@ -2928,7 +2907,7 @@
             <div class="shipmain-body">
                 <div class="main-header">
                     <div class="main-header1">
-                        <div class="uplifted-logo">The Uplifted Universe</div>
+                        <div class="uplifted-logo2">The Uplifted Universe</div>
                         <div class="scifi">A Sci-Fi Tabletop Game</div>
                     </div>
                     <div class="main-header3">
