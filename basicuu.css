@@ -1,16 +1,16 @@
-@import url('https://github.com/Scruffy518/Fonts-and-Stuff/blob/main/final-frontier-old-style/FinalFrontierOldStyle-8Pg.ttf');
-
-@import url('https://github.com/Scruffy518/Fonts-and-Stuff/blob/main/a_atmospheric/aAtmospheric.otf');
-
-/* 
-    IMPORTED FONTS
-    font-family: "FinalFrontierOldStyle";
-    font-family: "aAtmospheric";
-*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 @font-face {
     font-family: Avenir;
     src: url(avenir_ff/AvenirLTStd-Book.otf);
+    font-family: 'Edge of the Galaxy';
+    src: url(edge-of-the-galaxy-font/EdgeOfTheGalaxyRegular-OVEa6.otf);
+    font-family: 'a Atmospheric';
+    src: url(a-atmospheric-font/Atmospheric-rg4aL.ttf);
+    font-family: 'Final Frontier Old Style';
+    src: url(final-frontier-old-style-font/FinalFrontierOldStyle-8Pg.ttf);
+    font-family: 'Conduit Personal Use';
+    src: url(conduit-font/ConduitPersonalUseRegular-6YGeq.ttf);
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -195,7 +195,7 @@ input[type=number] {
     text-align: center;
     /* Tabs when not clicked */
     border: 2px solid black;
-    font-family: "aAtmospheric";
+    font-family: 'Orbitron', sans-serif;
 }
 
 .charsheet input.sheet-tab1:checked+span.sheet-tab1,
@@ -204,7 +204,7 @@ input[type=number] {
     /* Tabs when clicked */
     border: 3px solid black;
     font-size: 20px;
-    font-family: "aAtmospheric";
+    font-family: 'Orbitron', sans-serif;
 }
 
 /*----------- Tab Contents Styling -------------*/
@@ -235,12 +235,12 @@ div.sheet-intro {
 
 .charsheet .welcome1 {
     font-size: 80px;
-    font-family: "aAtmospheric";
+    font-family: 'Orbitron', sans-serif;
 }
 
 .charsheet .welcome2 {
     font-size: 25px;
-    font-family: "aAtmospheric";
+    font-family: 'Orbitron', sans-serif;
 }
 
 .charsheet .options {
@@ -349,7 +349,7 @@ div.sheet-tab3 {
 
 /* Tab 1 Main Header */
 .charsheet .main-header1 {
-    font-family: "aAtmospheric";
+    font-family: 'Orbitron', sans-serif;
     padding-top: 25px;
 }
 
@@ -363,12 +363,17 @@ div.sheet-tab3 {
 }
 
 .charsheet .uplifted-logo {
-    font-size: 24px;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.charsheet .uplifted-logo2 {
+    font-size: 30px;
     font-style: italic;
 }
 
 .charsheet .scifi {
-    font-size: 15px;
+    font-size: 17.5px;
     padding-left: 5px;
     font-style: italic;
 }
@@ -1189,9 +1194,9 @@ div.sheet-tab3 {
 .charsheet .mainskilllabel {
     width: 310px;
     height: 30px;
-    padding-top: 7px;
-    font-size: 15px;
-    font-family: "aAtmospheric";
+    padding-top: 2.5px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
     color: black;
     font-style: italic;
 }
@@ -2623,8 +2628,8 @@ input.psionicdmg-toggle2[value='3']~div.psionicdmg-hide2 {
 }
 
 .sheet-rolltemplate-custom .sheet-title {
-    font-size: 30px;
-    font-family: "FinalFrontierOldStyle";
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
     font-style: normal;
     letter-spacing: 2px;
     padding-top: 5px;
